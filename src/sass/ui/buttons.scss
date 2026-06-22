@@ -8,6 +8,49 @@
     font-size: 20px;
 }
 
+.btn-send {
+    /* Property 1=Default */
+
+position: absolute;
+width: 220px;
+height: 40px;
+left: 20px;
+top: 20px;
+
+
+
+/* Rectangle 2 */
+
+box-sizing: border-box;
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+border: 1px solid #232323;
+border-radius: 2px;
+
+
+/* send request */
+
+position: absolute;
+width: 110px;
+left: calc(50% - 110px/2);
+top: 27.5%;
+bottom: 25%;
+
+font-family: 'Barlow';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+text-transform: uppercase;
+
+color: #232323;
+}
+
 @media screen and (min-width: 1200px) {
      .btn-default {
         &:hover {

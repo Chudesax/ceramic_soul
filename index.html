@@ -103,8 +103,8 @@
 				<div class="pure-u-1 pure-u-xl-1-2 pure-u-xxl-1-2 git__col-2">
 					<form action="#">
 						<fieldset class="git__fieldset">
-							<div class="git__unput-block">
-								<label class="git__label" for="Name">Name</label>
+							<div class="git__input-block">
+								<label class="git__label" for="name">Name</label>
 								<input class="git__input" type="text" id="name" name="name" placeholder="Name">
 							</div>
 							<div class="git__input-block">
@@ -112,12 +112,17 @@
 								<input class="git__input" type="email" id="email" name="email" placeholder="Email">
 							</div>
 						</fieldset>
-						<label for="question">Your text</label>
-						<textarea class="git__textarea" name="question" id="question" placeholder="your fucking text, bitch"></textarea>
+						<label class="git__label" for="question">Your text</label>
+						<textarea class="git__textarea" name="question" id="question"
+							placeholder="Start typing..."></textarea>
 
-						<div class="checkbox"></div>
+						<label class="git__label git__check-block" for="checkbox">
+							<input class="git__checkbox" type="checkbox" id="checkbox">
+							I agree with the <a href="#">terms</a>
+						</label>
+
 					</form>
-					<button class="btn-default git__button">send request</button>
+					<button class="btn-send git__button">send request</button>
 					<img src="/src/img/form/vase.png" alt="vase logo" class="git__img-vase">
 				</div>
 			</div>

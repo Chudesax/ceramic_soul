@@ -36,13 +36,13 @@
         font-size: 14px;
         line-height: 28px;
         color: $dark;
+
+        &:nth-child(2) {
+            margin-top: 8px;
+        }
     }
 
-    &__input,
-    &__textarea {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
+    &__input {
         padding: 10px 15px;
         background: #FFFFFF;
         border: 1px solid #E2E1E5;
@@ -53,7 +53,7 @@
         font-weight: 400;
         font-size: 14px;
         line-height: 28px;
-        color: $gray2;
+        color: $dark;
 
         &:focus {
             border: none;
@@ -63,6 +63,50 @@
         &::placeholder {
             color: $gray2;
         }
+
+    }
+
+    &__textarea {
+        padding: 10px 15px;
+        width: 100%;
+        height: 132px;
+        border: 1px solid #E2E1E5;
+        border-radius: 2px;
+        background: #fff;
+        color: $dark;
+        resize: none;
+
+        &:focus {
+            border: none;
+            outline: 1px solid $dark;
+        }
+
+        &::placeholder {
+            color: $gray2;
+        }
+    }
+
+    &__check-block {
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 28px;
+        color: $dark;
+
+        a {
+            color: #A22DC6;
+            text-decoration: none;
+            margin-left: 2px;
+        }
+    }
+
+    &__checkbox {
+        margin-right: 15px;
+		width: 15px;
+		height: 15px;
     }
 }
 
@@ -96,6 +140,7 @@
             display: block;
             width: 100%;
             object-fit: cover;
+            box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.25);
         }
 
         &__col-1 {
@@ -112,6 +157,14 @@
 
         &__img-vase {
             right: 0;
+        }
+
+        &__input {
+            &:hover {
+                border: none;
+                outline: 1px solid $dark;
+            }
+
         }
     }
 }
