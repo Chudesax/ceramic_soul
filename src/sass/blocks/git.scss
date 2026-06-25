@@ -1,16 +1,14 @@
 @use "/src/sass/base/variables.scss" as *;
 
 .git {
-    padding: 60px 10px 0 10px;
+    padding: 60px 10px 60px 10px;
 
     &__wrapper {
         padding-top: 60px;
     }
 
-    &__button {
+    &__btn {
         margin-top: 20px;
-        width: 220px;
-        height: 40px;
     }
 
     &__img-vase {
@@ -105,8 +103,8 @@
 
     &__checkbox {
         margin-right: 15px;
-		width: 15px;
-		height: 15px;
+        width: 15px;
+        height: 15px;
     }
 }
 
@@ -118,7 +116,7 @@
             padding-top: 60px;
         }
 
-        &__col-2 {
+        .pure-u-1 {
             position: relative;
         }
 
@@ -127,6 +125,14 @@
             position: absolute;
             right: -42px;
             bottom: 0;
+        }
+
+        &__input {
+            width: 300px;
+        }
+
+        &__textarea {
+            width: 300px;
         }
     }
 
@@ -143,20 +149,16 @@
             box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.25);
         }
 
-        &__col-1 {
-            padding-right: 10px;
-        }
-
-        &__col-2 {
-            padding-left: 10px;
-        }
-
         &__button {
             margin-top: 312px;
         }
 
         &__img-vase {
             right: 0;
+        }
+
+        &__form {
+            padding-left: 36px;
         }
 
         &__input {
@@ -173,12 +175,25 @@
     .git {
         padding-top: 100px;
 
-        &__col-2 {
+        &__form {
             padding-left: 147px;
+            // width: auto;
         }
 
         &__img-vase {
             right: 34px;
         }
+
+        &__fieldset {
+            display: flex;
+            column-gap: 45px;
+        }
+
+        // img {
+        //     width: 100%;
+        //     height: 356px;
+        //     object-fit: cover;
+        // }
+
     }
 }
